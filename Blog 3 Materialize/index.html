@@ -13,15 +13,15 @@
 </head>
 <body>
 <header>
-  <div class="row">
+  <div class="row ">
     
       <div class="blue lighten-2">
-        <nav class="nav-extended blue lighten-2 head">
+        <nav class="nav-extended blue lighten-2 head ">
           <ul class="right margen-r">
-            <li><a class="menu waves-effect waves-light btn indigo"><i class="material-icons left">home</i>INICIO</a></li>
-            <li><a class="menu waves-effect waves-light btn indigo"><i class="material-icons left">location_on</i>ESTUVE EN...</a></li>
-            <li><a class="menu waves-effect waves-light btn indigo"><i class="material-icons left">star</i>MEJORES VIAJES</a></li>
-            <li><a class="menu waves-effect waves-light btn indigo"><i class="material-icons left">message</i>RECOMENDACIONES</a></li>                
+            <li><a class="menu waves-effect waves-light btn indigo"><i class="material-icons left">home</i><span class="title hide-on-med-and-down">INICIO</span></a></li>
+            <li><a class="menu waves-effect waves-light btn indigo"><i class="material-icons left">location_on</i><span class="title hide-on-med-and-down">ESTUVE EN...</span></a></li>
+            <li><a class="menu waves-effect waves-light btn indigo"><i class="material-icons left">star</i><span class="title hide-on-med-and-down">MEJORES VIAJES</span></a></li>
+            <li><a class="menu waves-effect waves-light btn indigo"><i class="material-icons left">message</i><span class="title hide-on-med-and-down">RECOMENDACIONES</span></a></li>                
           </ul>
         </nav>
       </div>
@@ -35,7 +35,7 @@
   </div>
 </header>
 <div class="row">
-  <div class="col l1">
+  <div class="col l1 responsive-img-social">
     <img class="responsive-img" src="img/icon_facebook.png"><br>
     <img class="responsive-img" src="img/icon_instagram.png"><br>
     <img class="responsive-img" src="img/icon_pinterest.png"><br>
@@ -83,16 +83,17 @@
           <div class="chip">
             Mendoza, Argentina  <i class="material-icons">location_on</i>
           </div>
-          <p class="white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sequi repudiandae distinctio nulla et tempora omnis totam, nihil quaerat? Quod, at veniam. Sint voluptates incidunt, asperiores facere dolores nisi iste!</p>  
+          <p class="white-text">El término posee diferentes significados y usos, de acuerdo al contexto en el que sea utilizado y la región o país en donde se encuentre.</p>
+        
         </div>
       </div>
 
       <div class="row">
         <span class="white-text">
-           
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sequi repudiandae distinctio nulla et tempora omnis totam, nihil quaerat? Quod, at veniam. Sint voluptates incidunt, asperiores facere dolores nisi iste!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sequi repudiandae distinctio nulla et tempora omnis totam, nihil quaerat? Quod, at veniam. Sint voluptates incidunt, asperiores facere dolores nisi iste!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sequi repudiandae distinctio nulla et tempora omnis totam, nihil quaerat? Quod, at veniam. Sint voluptates incidunt, asperiores facere dolores nisi iste!</p>
+           <p> El significado principal y más universal que ha recogido la palabra cabaña, represente el nombre que se le ha dado a un tipo de vivienda que es realizada mayormente con materiales naturales, obtenidos directamente del medio ambiente.</p>
+            
+            <p>La cabaña es una vivienda muy común en entornos naturales y/o rurales, siendo un lugar muy utilizado para construirlas, el bosque, ya que de él proviene el principal material utilizado para su construcción: la madera.  </p>
+            <p>Este tipo de viviendas ha sido una buena forma de que el hombre se relacione con el medio ambiente, ya que tienden a ubicarse en espacios que poseen abundante presencia vegetal y a diferencia de otros tipos de viviendas, no alteran los espacios, sino que conviven con ellos. Muchas personas, tienden a desarrollar, zonas de cultivo, granjas y zonas de pastoreo para sus animales, aledaños a su cabaña.              </p>
         </span>
       </div>  
 
@@ -100,14 +101,13 @@
 
   </div>
 
-  <div class="col l3">
+  <div class="col l3 center">
     <div class="card-panel blue lighten-2">
         <img src="img/perfil.jpg" alt="autor" class="circle responsive-img">
-        <span class="white-text">
-          <h5>Perfil del autor</h5>
-          <br>
-          I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+        <span class="white-text ">
+          <h5 class="">Perfil del autor</h5>
+          <hr>
+          <p>En 2006 Young trabajó con dos personas mas a los fines de publicar el libro. No consiguieron un editor que quisiera publicar el libro, por lo que formaron la empresa Windo Blown Media con el único fin de publicar el libro.</p>
         </span>
     </div>
   </div>
@@ -115,6 +115,50 @@
 </div>
 
 
+
+
+<div class="row">
+
+    <div class="col l9">
+        
+      <div class="card-panel blue lighten-2">
+          <div class="row">
+            
+            <h4 class="white-text">Deja tu comentario</h4>
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Nombre</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">mode_edit</i>
+                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Comentario</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light blue-grey lighten-3 right " type="submit" name="action">Enviar
+                    <i class="material-icons right">send</i>
+                </button>
+              </form>
+            </div>
+        </div>  
+  
+      </div>
+  
+    </div>
+
+
+  
+</div>  
   <script>
       $( document ).ready(function() {
       $(".button-collapse").sideNav();

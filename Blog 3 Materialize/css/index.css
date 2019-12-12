@@ -8,9 +8,7 @@ body{
   background-size: cover;
   background-position: center;
 }
-.responsive-img{
-  
-}
+
 .barra-superior{
   /*min-height: 4rem;*/
   position: fixed;
@@ -56,4 +54,39 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
   margin-top: -95px;
   border-radius:10px;
 
+}
+
+
+@media (max-width: 850px) {
+  .img-header {
+    height: 150px;
+    margin-left: 1px;
+    margin-top: -150px;
+    border-radius: 10px;
+}
+  .text-title{
+    visibility: hidden;
+    display: none;
+  }
+  .responsive-img-social{
+    visibility: hidden;
+    display: none;
+  }
+ 
+}
+
+
+
+@media (max-width: 450px) {
+  .img-header {
+    height: 100px;
+    margin-left: 1px;
+    margin-top: -150px;
+    border-radius: 10px;
+}
+nav ul li {
+  transition: background-color .3s;
+  float: right;
+  padding: 0;
+}
 }
